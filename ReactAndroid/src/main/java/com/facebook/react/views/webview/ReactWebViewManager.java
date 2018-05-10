@@ -376,7 +376,6 @@ public class ReactWebViewManager extends SimpleViewManager<WebView> {
 
       @Override
       public void onPermissionRequest(PermissionRequest request) {
-        super.onPermissionRequest(request);
         request.grant(request.getResources());
       }
     });
